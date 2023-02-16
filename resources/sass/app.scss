@@ -1,0 +1,1314 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Roboto');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import "/node_modules/font-awesome/scss/font-awesome.scss";
+@import "/node_modules/select2/dist/css/select2.css";
+
+body{
+    background-color: #fff;
+    position: relative;
+    font-family: 'Roboto' !important;
+    font-weight: normal;
+    text-rendering: geometricPrecision;
+}
+
+header{
+    background-color: #1286e9;
+}
+
+header nav img.menu{
+    width: 22px;
+}
+
+header nav img.custom-logo{
+    width: 140px;
+}
+
+header nav img.flag{
+    width: 25px;
+}
+
+header .navbar-toggler,header .navbar-toggler:focus,header .navbar-toggler:active{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+/*### LOGIN ###*/
+
+.login{
+    position: relative;
+    height: 100vh;
+    
+    background-size: cover;
+    background-color: #1286e9;
+    background-image: url(../assets/images/bg-lensys2.jpg);
+}
+
+.login .logo{
+    width: 163px;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+.login .wrapper{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+}
+
+.login .search{
+    position: relative;
+    margin-bottom: 10px;
+  
+}
+.login .search input{
+
+    height: 45px;
+    text-indent: 25px;
+    border: transparent;
+    border-radius: 20px;
+}
+
+.login .search .ico-user{
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 13px;
+}
+
+.login .search .ico-pass{
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 13px;
+}
+
+
+.login .bootstrap-select{
+    width: 100% !important;
+}
+
+.login .bootstrap-select button{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 45px;
+}
+
+.login .bootstrap-select .filter-option-inner-inner{
+    padding-top: 7px;
+    font-size: 13px;
+}
+
+.login .dropdown-item img,
+.login .filter-option-inner-inner img{
+    width: 25px;
+}
+
+.login form button.btn-register{
+    width: 100%;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.login .lost-pass{
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999999;
+    opacity: 1; /* Firefox */
+    font-size: 13px;
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999999;
+    font-size: 13px;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999999;
+    font-size: 13px;
+}
+
+.login .search input:focus{
+
+    box-shadow: none;
+    border: none;
+}
+
+.login .flag{
+    width: 25px;
+    margin-right: 6px;
+}
+
+.login .select2-container--default .select2-selection--single{
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+    font-size: 14px;
+}
+
+.login form .form-check{
+    padding-left: 25px;
+}
+
+.login form .form-check-label{
+    color:#fff;
+    font-size:12px;
+}
+
+.select2-results__options li span .flag{
+    width: 25px;
+    margin-right: 6px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 9px;
+    right: 9px;
+}
+/*### INICIO ###*/
+
+.inicio{
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.inicio p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.inicio .box{
+    background-color: #fff;
+    border:1px solid #cccccc;
+    border-radius:15px;
+    color:#000;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inicio .box img{
+    display: block;
+    margin: 0 auto 10px;
+    width: 48px;
+}
+
+.inicio .dot{
+    width: 12px;
+    height: 12px;
+    background-color: #1286e9;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.campana{
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.campana p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.campana .form-control{
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-indent: 10px;
+}
+
+.campana .bootstrap-select{
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 12px;
+    width: 100%;
+    text-indent: 0px;
+}
+
+.campana .bootstrap-select button{
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    height: 40px;
+}
+
+.campana .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+    font-size: 12px;
+    padding-top: 4px;
+    text-indent: 10px;
+}
+
+.campana .bootstrap-select .dropdown-menu li a{
+    font-size: 12px;
+}
+
+.campana form button.btn-save {
+    width: 100%;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 30px;
+}
+
+.campana form button.btn-save i{
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.lista-campana{
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.lista-campana p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.lista-campana .crear-campana{
+
+    display: block;
+    margin:0 auto;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.lista-campana .crear-campana i{
+   font-weight: normal;
+   margin-right: 5px;
+}
+
+.lista-campana .resultado{
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.lista-campana .resultado li{
+    background-color: #fff;
+    border-radius: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.lista-campana .resultado li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lista-campana .resultado .nombre-campana{
+    font-size:10px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+    padding-left: 5px;
+}
+
+.lista-campana .resultado p.pais,
+.lista-campana .resultado p.user{
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: initial;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.lista-campana .resultado li img{
+    width: 5px;
+    margin-right: 10px;
+}
+
+.lista-campana .cabecera{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.inventario{
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.inventario p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.inventario .crear-campana{
+
+    display: block;
+    margin:0 auto;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.inventario .crear-campana i{
+   font-weight: normal;
+   margin-right: 5px;
+}
+
+.inventario .resultado{
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.inventario .resultado .line{
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.inventario .resultado li{
+    background-color: #fff;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+}
+
+.inventario .resultado li h2{
+    color: #1286e9;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.inventario .resultado li h2 span{
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 500;
+    display: block;
+}
+
+.inventario .resultado .datos,
+.inventario .resultado .datos-user{
+    display: flex;
+}
+
+.inventario .resultado .datos img,
+.inventario .resultado .datos-user img{
+    width: 35px;
+    height: 35px;
+}
+
+.inventario .resultado .datos label{
+    color: #999999;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding-left: 12px;
+}
+
+.inventario .resultado .datos label span{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.inventario .resultado .datos-user div.detalle{
+    display: grid;
+}
+
+.inventario .resultado .datos-user label{
+    color: rgba(0,0,0,0.5);
+    font-weight: 700;
+    font-size: 9px;
+    padding-left: 12px;
+    margin-bottom: 0;
+}
+
+.inventario .resultado .datos-user label span{
+    font-weight: normal;
+}
+
+.lista-voluntario{
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.lista-voluntario p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.lista-voluntario .crear-voluntario{
+
+    display: block;
+    margin:0 auto;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.lista-voluntario .crear-voluntario i{
+   font-weight: normal;
+   margin-right: 5px;
+}
+
+.lista-voluntario .resultado{
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.lista-voluntario .resultado li{
+    background-color: #fff;
+    border-radius: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.lista-voluntario .resultado li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lista-voluntario .resultado .nombre-campana{
+    font-size:10px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+    padding-left: 5px;
+}
+
+.lista-voluntario .resultado p.pais,
+.lista-voluntario .resultado p.user{
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: initial;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.lista-voluntario .resultado li img{
+    width: 5px;
+    margin-right: 10px;
+}
+
+.lista-voluntario .cabecera{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.resultados {
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.resultados  p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+
+.resultados  .resultado{
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.resultados  .resultado .line{
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.resultados  .resultado li{
+    background-color: #fff;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+}
+
+.resultados  .resultado li h2{
+    color: #1286e9;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.resultados  .resultado li h2 span{
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 500;
+    display: block;
+}
+
+.resultados  .resultado .datos{
+    display: flex;
+}
+
+.resultados .resultado .datos img{
+    width: 24px;
+    height: 27px;
+}
+
+
+
+.resultados  .resultado .datos label{
+    color: #999999;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding-left: 12px;
+}
+
+.resultados  .resultado .datos label span{
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000;
+    text-transform: none;
+}
+
+.resultados  .resultado .datos label span.nombre{
+    font-size: 14px;
+}
+
+
+.resultado-voluntario .cabecera{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    position: relative;
+}
+.resultado-voluntario .datos{
+    display: flex;
+    justify-content: center;
+}
+
+.resultado-voluntario .datos img{
+    width: 35px;
+    height: 40px;
+}
+
+
+.resultado-voluntario .datos label{
+    color: #999999;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding-left: 12px;
+}
+
+.resultado-voluntario .datos label.leader{
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+.resultado-voluntario .datos label span{
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000;
+    text-transform: none;
+}
+
+.resultado-voluntario .datos label span.nombre{
+    font-size: 14px;
+}
+
+.resultado-voluntario .contenido{
+    background-color: #e6f0f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.resultado-voluntario .contenido p.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.resultado-voluntario .box{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+.resultado-voluntario .box .box-title{
+    display: block;
+    text-align: center;
+}
+
+.resultado-voluntario .box .box-title label{
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 9px;
+}
+
+.resultado-voluntario .box .box-title h3{
+    color: #1286e9;
+    font-size: 75px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.resultado-voluntario .box .list{
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.resultado-voluntario .box .list li{
+    display: inline-grid;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding: 0px 10px 5px;
+    text-align: center;
+}
+
+.resultado-voluntario .box .list li:last-child{
+    border-right: none;
+}
+
+.resultado-voluntario .box .list li label{
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 8px;
+}
+
+.resultado-voluntario .box .list li h4{
+    color: #1286e9;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.resultado-voluntario .box .bar .icos img{
+    width: 30px;
+}
+
+.resultado-voluntario .box .bar .icos h4{
+    color: #1286e9;
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.resultado-voluntario .box .bar .line{
+    border-radius: 5px;
+    background-color: #cccccc;
+    width: 100%;
+    height: 8px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.resultado-voluntario .box .bar label{
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+.resultado-voluntario .box table{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.resultado-voluntario .box table tr:first-child td{
+    border: none;
+}
+
+.resultado-voluntario .box table tr:last-child td{
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+.resultado-voluntario .box table td{
+    padding: 3px 0px;
+}
+
+.resultado-voluntario .box table .number{
+    color: #1286e9;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.resultado-voluntario .box table .text{
+    color: #000;
+    font-size: 10px;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.resultado-voluntario .box.promedio{
+    margin-top: 30px;
+    display: block;
+}
+
+.resultado-voluntario .box.promedio .box-title label{
+    margin-bottom: 25px;
+}
+
+.resultado-voluntario .box.promedio .list{
+    display: inline-flex;
+    align-items: end;
+    width: 100%;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.resultado-voluntario .box.promedio .list li p{
+    display: block;
+    margin: 0;
+    color: #1286e9;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+.resultado-voluntario .box.promedio .list li{
+    display: table-cell;
+    width: calc(100vh /3);
+    padding-bottom: 0;
+}
+
+
+.resultado-voluntario .box.promedio .bar{
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+.resultado-voluntario .box.promedio .bar .line{
+    background-color: #1286e9;
+}
+
+.resultado-voluntario .box.promedio img.lentes{
+    width: 87%;
+    display: block;
+    margin: 0 auto;
+}
+
+.paciente-nuevo .cabecera{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    position: relative;
+}
+
+.paciente-nuevo .cabecera .datos{
+    display: flex;
+    justify-content: center;
+}
+
+.paciente-nuevo .cabecera .datos img{
+    width: 35px;
+    height: 40px;
+}
+
+
+.paciente-nuevo .cabecera .datos label{
+    color: #999999;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding-left: 12px;
+}
+
+.paciente-nuevo .cabecera .datos label.leader{
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+.paciente-nuevo .cabecera .datos label span{
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000;
+    text-transform: none;
+}
+
+.paciente-nuevo .cabecera .datos label span.nombre{
+    font-size: 14px;
+}
+
+.paciente-nuevo .crear-paciente{
+
+    display: block;
+    margin:20px auto 0;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.paciente-nuevo .crear-paciente i{
+   font-weight: normal;
+   margin-right: 5px;
+}
+
+.paciente-nuevo .contenido{
+    background-color: #e6f0f2;
+    min-height: 100vh;
+}
+
+.paciente-nuevo .contenido .header{
+    text-align: center;
+    font-size: 9px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.paciente-nuevo .resultado {
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.paciente-nuevo .resultado li {
+    background-color: #fff;
+    border-radius: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.paciente-nuevo .resultado li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.paciente-nuevo .resultado .nombre-campana {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+    padding-left: 5px;
+}
+
+.paciente-nuevo .resultado li img {
+    width: 5px;
+    margin-right: 10px;
+}
+
+.paciente-nuevo .resultado li i.fa-check-circle{
+    color: #47b835;
+    font-size: 20px;
+}
+
+.paciente-nuevo .resultado li i.fa-check-circle-o{
+    color: #cccccc;
+    font-size: 20px;
+}
+
+
+.paciente-registro .cabecera{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    position: relative;
+}
+
+.paciente-registro .cabecera .datos{
+    display: flex;
+    justify-content: center;
+}
+
+.paciente-registro .cabecera .datos img{
+    width: 35px;
+    height: 40px;
+}
+
+
+.paciente-registro .cabecera .datos label{
+    color: #999999;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding-left: 12px;
+}
+
+.paciente-registro .cabecera .datos label.leader{
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+.paciente-registro .cabecera .datos label span{
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000;
+    text-transform: none;
+}
+
+.paciente-registro .cabecera .datos label span.nombre{
+    font-size: 14px;
+}
+
+.paciente-registro .cabecera .datos label span.codigo{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+.paciente-registro .contenido{
+    background-color: #e6f0f2;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.paciente-registro p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+
+.paciente-registro .info{
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.paciente-registro .info label{
+    display: block;
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 0;
+}
+
+
+.paciente-registro .info p{
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: normal;
+    text-transform: initial;
+    font-weight: normal;
+}
+
+.paciente-registro .info p.big{
+    margin-bottom: 0;
+    font-size: 25px;
+    letter-spacing: normal;
+    text-transform: initial;
+    font-weight: 700;
+}
+
+.paciente-registro a.btn-nuevo{
+    display: block;
+    margin:0 auto;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 23px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.paciente-registro a.finalizar{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paciente-registro .form-control{
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-indent: 10px;
+}
+
+.paciente-registro .bootstrap-select{
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 12px;
+    width: 100%;
+    text-indent: 0px;
+}
+
+.paciente-registro .bootstrap-select button{
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    height: 40px;
+}
+
+.paciente-registro .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+    font-size: 12px;
+    padding-top: 4px;
+    text-indent: 10px;
+}
+
+.paciente-registro .bootstrap-select .dropdown-menu li a{
+    font-size: 12px;
+}
+
+.paciente-registro form button.btn-save {
+    width: 100%;
+    background-color: #47b835;
+    border-color: #47b835;
+    border-radius: 23px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 30px;
+}
+
+.paciente-registro form button.btn-save i{
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.paciente-registro .contenido.analisis label.referir{
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.paciente-registro .contenido.analisis label.referir .fa-check-circle{
+    font-size: 26px;
+    color: #1286e9;
+    margin-left: 4px;
+}
+
+.paciente-registro .contenido.entregas .circle{
+    display: flex;
+    background-color: #fff;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cccccc;
+    margin: 25px auto 10px;
+} 
+
+.paciente-registro .contenido.entregas .circle i{
+    color: #1286e9;
+}
+.paciente-registro #timer{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.paciente-registro .base-timer {
+    position: relative;
+    width: 47px;
+    height: 47px;
+  }
+  
+.paciente-registro  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+.paciente-registro .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+.paciente-registro .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+.paciente-registro .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+.paciente-registro  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+.paciente-registro .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+.paciente-registro.base-timer__path-remaining.red {
+    color: red;
+  }
+  
+.paciente-registro .base-timer__label {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+@media only screen and (min-width: 1200px) {
+    .login .wrapper{
+        position: relative;
+        margin-top: calc(100vh - 450px);
+    }
+}
