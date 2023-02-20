@@ -541,6 +541,7 @@ header .navbar-toggler,header .navbar-toggler:focus,header .navbar-toggler:activ
     padding-bottom: 12px;
     color: #fff;
     text-align: center;
+    text-decoration:none;
 }
 
 .lista-voluntario .crear-voluntario i{
@@ -578,7 +579,9 @@ header .navbar-toggler,header .navbar-toggler:focus,header .navbar-toggler:activ
     text-transform: uppercase;
     text-decoration: underline;
     display: block;
-    padding-left: 5px;
+    padding-left: 0;
+    color: #000;
+    letter-spacing: 0.04em;
 }
 
 .lista-voluntario .resultado p.pais,

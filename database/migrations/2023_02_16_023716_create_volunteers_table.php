@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('lastname',50);
             $table->string('dni',8);
             $table->string('cellphone',12);
-            $table->string('profession',50);
+            $table->unsignedBigInteger('profession_id');
             $table->integer('age');
             $table->string('gender');
             $table->string('city');
@@ -28,6 +28,8 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign('leader_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('profession_id')->references('id')->on('profession')->onDelete('cascade');
+
         });
     }
 
@@ -38,6 +40,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('volunteers');
+        // Schema::dropIfExists('volunteers');
     }
 };

@@ -69,10 +69,10 @@
                     </ul>
                 </div>
                 <span class="navbar-text">
-                    <a href="{{ url('/') }}" class="custom-logo-link" rel="home" aria-current="page">
+                
+                    <a href="{{ url('/home') }}" class="custom-logo-link" rel="home" aria-current="page">
                         <img  src=" {{ asset('assets/images/logo-header.png') }}" class="custom-logo" alt="Lensys"> 
-                    
-                    </a>	
+                    </a>
                 </span>
                 <div class="country">
                     <a href="#">

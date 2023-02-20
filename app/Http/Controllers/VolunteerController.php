@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Volunteer;
+use App\Models\{Volunteer,User,Profession, Country, City};
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 
 /**
  * Class VolunteerController
@@ -18,10 +19,24 @@ class VolunteerController extends Controller
      */
     public function index()
     {
-        $volunteers = Volunteer::paginate();
+        $volunteers = User::with("roles")->whereHas("roles", function($q) {
+            $q->whereIn("name", ["volunteer"]);
+        })->get();
+     
+        // $volunteers = User::select(
+        //     "volunteers.id", 
+        //     "volunteers.fullname",
+        //     "volunteers.city", 
+        //     "users.name as user_name"
+        // )
+        // ->join("users", "users.id", "=", "volunteers.leader_id")
+        // ->get();
+        return view('volunteer.index', compact('volunteers'));
 
-        return view('volunteer.index', compact('volunteers'))
-            ->with('i', (request()->input('page', 1) - 1) * $volunteers->perPage());
+        // $volunteers = Volunteer::paginate();
+
+        // return view('volunteer.index', compact('volunteers'))
+        //     ->with('i', (request()->input('page', 1) - 1) * $volunteers->perPage());
     }
 
     /**
@@ -31,8 +46,16 @@ class VolunteerController extends Controller
      */
     public function create()
     {
-        $volunteer = new Volunteer();
-        return view('volunteer.create', compact('volunteer'));
+        
+        $leader = User::with("roles")->whereHas("roles", function($q) {
+            $q->whereIn("name", ["leader"]);
+        })->get();
+
+        $profession = Profession::get(['id', 'name']);
+        $countries = Country::get(['id', 'name']);
+ 
+        return view('auth.register',compact('leader','profession','countries'));
+    
     }
 
     /**
@@ -105,5 +128,11 @@ class VolunteerController extends Controller
 
         return redirect()->route('volunteers.index')
             ->with('success', 'Volunteer deleted successfully');
+    }
+
+    public function fetchState(Request $request)
+    {
+        $data['cities'] = City::where('country_id',$request->country_id)->get(['name','id']);
+        return response()->json($data);
     }
 }

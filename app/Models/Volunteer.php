@@ -34,7 +34,7 @@ class Volunteer extends Model
 		'lastname' => 'required',
 		'dni' => 'required',
 		'cellphone' => 'required',
-		'profession' => 'required',
+		'profession_id' => 'required',
 		'age' => 'required',
 		'gender' => 'required',
 		'city' => 'required',
@@ -48,7 +48,7 @@ class Volunteer extends Model
      *
      * @var array
      */
-    protected $fillable = ['fullname','firstname','lastname','dni','cellphone','profession','age','gender','city','leader_id'];
+    protected $fillable = ['fullname','firstname','lastname','dni','cellphone','profession_id','age','gender','city','leader_id'];
 
 
     /**
@@ -57,6 +57,11 @@ class Volunteer extends Model
     public function user()
     {
         return $this->hasOne('App\Models\User', 'id', 'leader_id');
+    }
+
+    public function profession()
+    {
+        return $this->hasOne('App\Models\Profession', 'id', 'profession_id');
     }
     
 

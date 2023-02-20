@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+    @role('volunteer')
+    <p>solo volunteer</p>
+    @endrole
     @role('admin')
     <p>solo admin</p>
     @endrole
@@ -32,7 +34,7 @@
                 </a>
             </div>
             <div class="col-6">
-                <a href="#" class="box">
+                <a href="{{ route('volunteers.index') }}" class="box">
                     <img src="{{ asset('assets/images/ico-voluntarios.png') }}">
                     VOLUNTARIOS
                 </a>

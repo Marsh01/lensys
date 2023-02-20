@@ -18,7 +18,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Auth::routes();
+Auth::routes(['register' => false]);
+
 Route::get('/', [App\Http\Controllers\CustomAuthController::class, 'index'])->name('logincustom');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('/volunteers', App\Http\Controllers\VolunteerController::class);
+Route::post('api/fetch-state', [App\Http\Controllers\VolunteerController::class, 'fetchState']);
